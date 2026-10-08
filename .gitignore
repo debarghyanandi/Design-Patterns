@@ -1,0 +1,24 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+*.trx
+.idea/
+*.DotSettings.user
+
+# Java
+target/
+build/
+.gradle/
+*.class
+*.iml
+out/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
