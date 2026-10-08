@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Creational/">
+    <Project Path="Creational/Singleton/CSharp/Singleton/Singleton.csproj" />
+  </Folder>
+  <Folder Name="/Structural/" />
+  <Folder Name="/Behavioral/" />
+</Solution>

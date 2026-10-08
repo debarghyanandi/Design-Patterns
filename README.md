@@ -8,8 +8,12 @@ Reference course: Dmitri Nesteruk, *Design Patterns in C# and .NET*.
 ## Layout
 
 ```
-csharp/   C# / .NET 10 — one pattern at a time
-java/     Java 21 — from December
+DesignPatterns.slnx          one solution for every C# project
+Directory.Build.props        shared C# settings (.NET 10, nullable, warnings as errors)
+Creational/  Structural/  Behavioral/
+  <Pattern>/
+    CSharp/<Pattern>/        console project
+    Java/                    from December
 ```
 
 ## For each pattern
