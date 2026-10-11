@@ -28,13 +28,12 @@ Creational/  Structural/  Behavioral/
 | # | Pattern | Status |
 |---|---|---|
 | 1 | ⭐ Singleton | |
-| 2 | ⭐ Factory Method | |
+| 2 | ⭐ Factory — Simple Factory, Factory Method, Abstract Factory (`Creational/Factory`) | |
 | 3 | ⭐ Builder | |
 | 4 | ⭐ Strategy | |
 | 5 | ⭐ Observer | |
 | 6 | ⭐ Decorator | |
 | 7 | ⭐ Adapter | |
-| 8 | ⭐ Abstract Factory | |
 | 9 | ⭐ Proxy | |
 | 10 | ⭐ Facade | |
 | 11 | Command | |
