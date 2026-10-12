@@ -1,3 +1,4 @@
+using DesignPatterns.Creational.Factory.FactoryMethod;
 using DesignPatterns.Creational.Factory.SimpleFactory;
 
 Console.WriteLine("--- Simple Factory ---");
@@ -16,4 +17,12 @@ catch (ArgumentException ex)
 }
 
 Console.WriteLine("--- Factory Method ---");
-// Your Factory Method version goes in the FactoryMethod/ folder, called from here.
+
+PaymentProcessor card = new CardProcessor();
+card.ProcessPayment(123m);
+
+PaymentProcessor upi = new UpiProcessor();
+upi.ProcessPayment(12m);
+
+PaymentProcessor wallet = new WalletProcessor();
+wallet.ProcessPayment(1m);
