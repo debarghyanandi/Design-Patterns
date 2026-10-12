@@ -17,12 +17,17 @@ catch (ArgumentException ex)
 }
 
 Console.WriteLine("--- Factory Method ---");
+PaymentProcessor[] processors = [new CardProcessor(), new UpiProcessor(), new WalletProcessor()];
+foreach (PaymentProcessor processor in processors)               // the loop sees only the base type
+{
+    processor.ProcessPayment(100m);
+}
 
-PaymentProcessor card = new CardProcessor();
-card.ProcessPayment(123m);
-
-PaymentProcessor upi = new UpiProcessor();
-upi.ProcessPayment(12m);
-
-PaymentProcessor wallet = new WalletProcessor();
-wallet.ProcessPayment(1m);
+try
+{
+    new CardProcessor().ProcessPayment(0m);                       // the shared rule rejects it for every subclass
+}
+catch (ArgumentOutOfRangeException ex)
+{
+    Console.WriteLine($"Rejected: {ex.Message}");
+}
