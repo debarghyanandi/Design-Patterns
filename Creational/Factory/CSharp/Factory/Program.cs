@@ -17,6 +17,12 @@ catch (ArgumentException ex)
 }
 
 Console.WriteLine("--- Factory Method ---");
+
+PaymentProcessor wallet = new WalletProcessor();
+wallet.ProcessPayment(123);
+
+// Or
+
 PaymentProcessor[] processors = [new CardProcessor(), new UpiProcessor(), new WalletProcessor()];
 foreach (PaymentProcessor processor in processors)               // the loop sees only the base type
 {
