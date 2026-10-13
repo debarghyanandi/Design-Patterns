@@ -1,7 +1,7 @@
 # Design Patterns
 
 All 23 Gang of Four patterns, written by hand and reviewed.
-C# first. The same patterns in Java from December.
+In C#.
 
 Reference course: Dmitri Nesteruk, *Design Patterns in C# and .NET*.
 
@@ -13,7 +13,6 @@ Directory.Build.props        shared C# settings (.NET 10, nullable, warnings as 
 Creational/  Structural/  Behavioral/
   <Pattern>/
     CSharp/<Pattern>/        console project
-    Java/                    from December
 ```
 
 ## For each pattern
@@ -21,7 +20,7 @@ Creational/  Structural/  Behavioral/
 - What problem it solves
 - The code
 - When **not** to use it
-- Where .NET (later Java / Spring) already uses it
+- Where .NET already uses it
 
 ## Order (⭐ = asked most in interviews)
 
