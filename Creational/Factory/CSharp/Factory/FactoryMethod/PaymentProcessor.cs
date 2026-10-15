@@ -2,11 +2,21 @@ using DesignPatterns.Creational.Factory.Payments;
 
 namespace DesignPatterns.Creational.Factory.FactoryMethod;
 
-// Factory Method: the base class owns the workflow; each subclass decides which IPayment to create.
-// A new payment type = a new subclass. No existing code changes (Open/Closed).
+// FACTORY METHOD (GoF)
+//
+// Why:  the workflow (validate, then pay) is the same for every payment type.
+//       Only "which IPayment to create" differs. So the base class writes the workflow once
+//       and leaves ONE method - the factory method - for each subclass to fill in.
+// Flow: processor.ProcessPayment(100)
+//       -> base class checks the amount
+//       -> base class calls CreatePayment()
+//       -> the SUBCLASS's override runs and returns, e.g., a UpiPayment
+//       -> base class calls Pay() on it.
+// Gain: a new payment type = a new subclass. No existing code is edited (Open/Closed).
+// How:  INHERITANCE - the subclass decides.
 public abstract class PaymentProcessor
 {
-    protected abstract IPayment CreatePayment();                  // the factory method
+    protected abstract IPayment CreatePayment();                  // the factory method; protected: only the workflow calls it
 
     public void ProcessPayment(decimal amount)                    // shared workflow, written once
     {

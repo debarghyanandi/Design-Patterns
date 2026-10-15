@@ -1,7 +1,8 @@
 namespace DesignPatterns.Creational.Factory.Payments;
 
-// The products. Every factory in this project creates one of these.
-// Shared, so Simple Factory, Factory Method and Abstract Factory all use the same classes.
+// PRODUCT kind 1: paying.
+// Shared by all three factories (Simple Factory, Factory Method, Abstract Factory),
+// so each pattern creates the same classes and only the way of creating them changes.
 public interface IPayment
 {
     void Pay(decimal amount);
