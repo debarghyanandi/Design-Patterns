@@ -1,7 +1,8 @@
 <Solution>
   <Folder Name="/Creational/">
-    <Project Path="Creational/Factory/CSharp/Factory/Factory.csproj" />
-    <Project Path="Creational/Singleton/CSharp/Singleton/Singleton.csproj" />
+    <Project Path="Creational/Builder/Builder.csproj" />
+    <Project Path="Creational/Factory/Factory.csproj" />
+    <Project Path="Creational/Singleton/Singleton.csproj" />
   </Folder>
   <Folder Name="/Structural/" />
   <Folder Name="/Behavioral/" />

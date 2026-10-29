@@ -11,8 +11,7 @@ Reference course: Dmitri Nesteruk, *Design Patterns in C# and .NET*.
 DesignPatterns.slnx          one solution for every C# project
 Directory.Build.props        shared C# settings (.NET 10, nullable, warnings as errors)
 Creational/  Structural/  Behavioral/
-  <Pattern>/
-    CSharp/<Pattern>/        console project
+  <Pattern>/                 console project (.csproj, Program.cs, pattern code)
 ```
 
 ## For each pattern
